@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Page</title>
+</head>
+<body style="background-color: rgb(243, 200, 174)">
+    <h2> Entered String : {{ main_text }} </h2>
+    <h2> String to search : {{ reg_text }} </h2>
+    <h2> RESULT: </br></h2>
+    {% if match %}
+        <ul>
+            {% for i in match %}
+            <li> {{i}} </li>
+            {% endfor %}
+         
+            <p> Total No. of Matches: {{total_matches}}</p>
+        </ul>
+        
+    {% else %}
+    <p> No match found! </p>
+    {% endif %}    
+
+</body>
+</html>

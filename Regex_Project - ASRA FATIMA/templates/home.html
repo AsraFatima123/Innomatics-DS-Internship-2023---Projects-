@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex 101 Clone</title>
+</head>
+
+<body style="background-color: rgb(243, 200, 174)">
+
+    <h1 style="text-align:center; color:blue;"> Welcome to the Regex 101 Clone Web App!! </h1>
+    <form action="{{ url_for('regex_fun') }}" method="post">
+        <label for="main_text">MAIN STRING:</label><br>
+        <input type="text" name="main_text" placeholder="Enter the main string"><br><br>
+        <label for="test_text">SEARCH PATTERN:</label><br>
+        <input type="text" name="test_text" placeholder="Enter the regex to search"><br><br>
+        <input type="submit" value="Search"><br>
+    </form>
+</body>
+</html>
