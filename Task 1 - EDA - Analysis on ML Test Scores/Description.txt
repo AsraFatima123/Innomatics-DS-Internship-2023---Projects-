@@ -1,0 +1,11 @@
+Kindly find the data description below:
+
+Batch - Represents the Batch Name
+
+User_ID - Represents the unique student id
+
+Score - Represents the Score out of 7
+
+
+
+GOAL: insights about the three different batches for which the score data has been provided to you.
